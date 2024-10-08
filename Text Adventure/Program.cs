@@ -1,10 +1,48 @@
-﻿namespace Text_Adventure
+﻿//print backstory for the user
+Console.WriteLine("Welcome to the Haunted Mansion!");
+Console.WriteLine("Your rich grandpa has recently passed away and he has left you with a lot of money and one of his Mansions.");
+Console.WriteLine("now that you are the newfound owner, you decide to take a look inside.");
+Console.WriteLine("the house is dated, creaky and falling appart.");
+Console.WriteLine("You walk in the front door.");
+Console.WriteLine("You take a look around and notice 3 ways to go.");
+Console.WriteLine("where will you go? The living room dining room or upstairs?");
+
+//promt the user for a choice
+Console.Write(">");
+string roomChoice = Console.ReadLine();
+//ask player where they will go
+if(roomChoice == "living room")
 {
-    internal class Program
+    Console.WriteLine("you chose to enter the living room.");
+    Console.WriteLine(" As you walk in the door slams shut behind you.");
+    Console.WriteLine(" what will you do now");
+    //prompt the use for a choice
+    Console.WriteLine(" open door | explore | wait");
+    Console.Write(">");
+    string livingRoomChoice = Console.ReadLine();
+    if(livingRoomChoice == "open door")
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.WriteLine(" you try to open the door, it is locked.");
+        Console.WriteLine("a monster appears behind you and ends your life");
     }
+    else if(livingRoomChoice == "explore")
+    {
+        Console.WriteLine(" you move the the center of the room and the floor opens up and you fall through.");
+        Console.WriteLine("you quickly hit the ground and die.");
+    }
+    else if(livingRoomChoice == "wait")
+    {
+        Console.WriteLine("you sit down and wait for about 10 minutes till a monster appears.");
+        Console.WriteLine(" the monster picks you up and rips you in two.");
+    }
+
 }
+else if(roomChoice == "dining room")
+{
+
+}
+else if(roomChoice == "upstairs")
+{
+
+}
+
