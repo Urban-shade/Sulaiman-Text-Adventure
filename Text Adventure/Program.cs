@@ -11,7 +11,7 @@ Console.WriteLine("where will you go? The living room dining room or upstairs?")
 Console.Write(">");
 string roomChoice = Console.ReadLine();
 //ask player where they will go
-if(roomChoice == "living room")
+if (roomChoice == "living room")
 {
     Console.WriteLine("you chose to enter the living room.");
     Console.WriteLine(" As you walk in the door slams shut behind you.");
@@ -20,28 +20,29 @@ if(roomChoice == "living room")
     Console.WriteLine(" open door | explore | wait");
     Console.Write(">");
     string livingRoomChoice = Console.ReadLine();
-    if(livingRoomChoice == "open door")
+    if (livingRoomChoice == "open door")
     {
         Console.WriteLine(" you try to open the door, it is locked.");
+        Console.ForegroundColor = ConsoleColor.DarkRed;
         Console.WriteLine("a monster appears behind you and ends your life");
     }
-    else if(livingRoomChoice == "explore")
+    else if (livingRoomChoice == "explore")
     {
         Console.WriteLine(" you move the the center of the room and the floor opens up and you fall through.");
         Console.WriteLine("you quickly hit the ground and die.");
     }
-    else if(livingRoomChoice == "wait")
+    else if (livingRoomChoice == "wait")
     {
         Console.WriteLine("you sit down and wait for about 10 minutes till a monster appears.");
         Console.WriteLine(" the monster picks you up and rips you in two.");
     }
 
 }
-else if(roomChoice == "dining room")
+else if (roomChoice == "dining room")
 {
 
 }
-else if(roomChoice == "upstairs")
+else if (roomChoice == "upstairs")
 {
 
 }
