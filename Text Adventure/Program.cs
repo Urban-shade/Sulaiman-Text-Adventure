@@ -121,4 +121,10 @@ else if (roomChoice == "BURN IT DOWN")
     Console.ForegroundColor = ConsoleColor.Green;
     writeLetterByLetter("you watch and hear all the monsters cries as they burn in the fire.");
 }
+else 
+{
+    Console.WriteLine(" you stood there doing nothing for a few minutes");
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("a bunch of monsters come out off all the rooms and start riping you appart.");
+}
 
